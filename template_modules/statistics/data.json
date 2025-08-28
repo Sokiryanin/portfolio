@@ -15,6 +15,16 @@
         "date": "28.08.2025",
         "start": 1756369330686,
         "end": 1756375356783
+      },
+      {
+        "date": "28.08.2025",
+        "start": 1756376321568,
+        "end": 1756376626178
+      },
+      {
+        "date": "28.08.2025",
+        "start": 1756376629413,
+        "end": 1756384917373
       }
     ],
     "files": [
@@ -40,7 +50,12 @@
       "info.svg",
       "link.svg",
       "button.scss",
-      "button.html"
+      "button.html",
+      "index.html",
+      "header.html",
+      "menu.html",
+      "header.scss",
+      "menu.scss"
     ]
   }
 }
