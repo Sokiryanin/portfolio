@@ -1,7 +1,7 @@
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("/Users/leftsider/Desktop/FullStack/Projects/portfolio/portfolio/src/assets/svgicons/preview/iconfont.woff2?a814a5f84fb5ee3e55c95930cb63bcee") format("woff2"); 
+	src: url("/Users/leftsider/Desktop/FullStack/Projects/portfolio/portfolio/src/assets/svgicons/preview/iconfont.woff2?83ee56a8b7961f07e164072e0548ddf4") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 

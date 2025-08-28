@@ -43,12 +43,69 @@
     flex-direction: row-reverse;
     gap: 12px;
   }
-  &--icon-arrow-ru {
+
+  &--text {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    gap: 12px;
+
     &::before {
-      transform: rotate(45deg);
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      align-content: center;
+      border: 1px solid $greyColor;
+      background-color: $mutedColor;
+      border-radius: 50%;
+      transition: all 0.5s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $lightColor;
+        background-color: transparent;
+        &::before {
+          background-color: $lightColor;
+          color: $darkColor;
+        }
+      }
     }
   }
+
+  &--text-big {
+    &::before {
+      font-size: 15px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &--text-rev {
+    flex-direction: row-reverse;
+  }
+
   &--fw {
     width: 100%;
   }
 }
+
+/*.text-button {
+  font-family: 'Satoshi';
+  align-items: center;
+  gap: 12px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $lightColor;
+
+  &::before {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    align-content: center;
+  }
+}
+*/
