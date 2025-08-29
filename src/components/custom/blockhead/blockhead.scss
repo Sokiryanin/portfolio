@@ -45,7 +45,7 @@
       @include adaptiveValue('font-size', 160, 45);
 
       @media (max-height: toEm(850)) {
-        @include adaptiveValue('font-size', 100, 45);
+        @include adaptiveValue('font-size', 128, 45);
       }
     }
   }
