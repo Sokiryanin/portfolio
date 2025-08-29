@@ -1,0 +1,40 @@
+.page {
+  // .page--home
+
+  &--home {
+  }
+
+  // .page__hero
+
+  &__hero {
+  }
+}
+
+.hero {
+  // .hero__container
+
+  &__container {
+    text-align: center;
+    min-height: 100svh;
+
+    display: grid;
+    align-items: center;
+  }
+
+  // .hero__image
+
+  &__image {
+    width: 100vw;
+    height: 65svh;
+
+    // aspect-ratio: 719/814;
+    object-fit: contain;
+
+    mix-blend-mode: lighten;
+  }
+
+  // .hero__blockhead
+  &__blockhead {
+    transform: translate(0, -30%);
+  }
+}
