@@ -44,7 +44,12 @@
       {
         "date": "30.08.2025",
         "start": 1756549073203,
-        "end": 1756549073203
+        "end": 1756553134459
+      },
+      {
+        "date": "30.08.2025",
+        "start": 1756553140798,
+        "end": 1756558549080
       }
     ],
     "files": [
@@ -83,7 +88,9 @@
       "blockhead.html",
       "blockhead.scss",
       "arik.png",
-      "home.scss"
+      "home.scss",
+      "skill.html",
+      "skill.scss"
     ]
   }
 }

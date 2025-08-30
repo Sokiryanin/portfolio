@@ -12,6 +12,11 @@
   // .page__clients
   &__clients {
   }
+
+  // .page__skills
+
+  &__skills {
+  }
 }
 
 .hero {
@@ -30,9 +35,7 @@
   &__image {
     width: 100vw;
     height: 65svh;
-
     object-fit: contain;
-
     mix-blend-mode: lighten;
   }
 
@@ -46,6 +49,7 @@
 
 .clients {
   // .clients__conatiner
+  @include adaptiveValue('padding-bottom', 80, 60);
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -56,5 +60,17 @@
   // .clients__item
 
   &__item {
+  }
+}
+
+/* ========== Skills page ========== */
+
+.skills {
+  // .skills__container
+  @include adaptiveValue('margin-bottom', 163, 15);
+  &__container {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
   }
 }
