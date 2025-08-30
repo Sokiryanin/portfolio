@@ -62,15 +62,3 @@
   &__item {
   }
 }
-
-/* ========== Skills page ========== */
-
-.skills {
-  // .skills__container
-  @include adaptiveValue('margin-bottom', 163, 15);
-  &__container {
-    display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
-  }
-}
