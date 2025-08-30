@@ -2,7 +2,7 @@
 
 .skills {
   // .skills__container
-  @include adaptiveValue('margin-bottom', 163, 15);
+  @include adaptiveValue('margin-bottom', 163, 60);
   counter-reset: item;
 
   &__container {

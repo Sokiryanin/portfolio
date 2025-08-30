@@ -17,6 +17,9 @@
 
   &__skills {
   }
+  // .page__selected-work
+  &__selected-work {
+  }
 }
 
 .hero {
@@ -62,3 +65,42 @@
   &__item {
   }
 }
+
+/* ========== Works page ========== */
+
+.selected-work {
+  @include adaptiveValue('padding-bottom', 160, 60);
+  // .selected-work__container
+
+  &__container {
+  }
+
+  // .selected-work__header
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    @include adaptiveValue('margin-bottom', 32, 16);
+    @media (min-width: $mobile) {
+      padding-inline: 32px;
+    }
+  }
+
+  // .selected-work__title
+
+  &__title {
+    @include adaptiveValue('font-size', 64, 32);
+    line-height: 1.1;
+    font-weight: 300;
+    color: $lightColor;
+    font-family: $fontSecondary;
+    span {
+      font-family: $fontItalic;
+    }
+  }
+}
+
+//========================================================================================================================================================

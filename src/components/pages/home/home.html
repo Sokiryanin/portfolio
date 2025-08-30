@@ -71,4 +71,62 @@
       ></include>
     </div>
   </section>
+
+  <section class="page__selected-work selected-work">
+    <div class="selected-work__container">
+      <div class="selected-work__header">
+        <h2 class="selected-work__title">Selected <span>Work</span></h2>
+        <a
+          href="#"
+          data-fls-button
+          class="button button--text button--icon-arrow button--arrow-ur"
+          >See all
+        </a>
+      </div>
+
+      <div class="selected-work__items works">
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/1.jpg",
+        "name": "Space",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/2.jpg",
+        "name": "Nova",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/3.jpg",
+        "name": "Sonic",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/4.jpg",
+        "name": "Solar",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+      </div>
+    </div>
+  </section>
 </main>
