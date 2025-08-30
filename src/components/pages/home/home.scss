@@ -38,20 +38,22 @@
 
   // .hero__blockhead
   &__blockhead {
-    transform: translate(0, -20%);
+    transform: translate(0, -25%);
   }
 }
 
 /* ========== Clients page ========== */
 
 .clients {
-  @include adaptiveValue('padding-bottom', 80, 15);
-  // .clients__item
-
-  [data-fls-marquee-inner] {
+  // .clients__conatiner
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
-    gap: 35px;
+    justify-content: space-evenly;
   }
+  // .clients__item
 
   &__item {
   }
