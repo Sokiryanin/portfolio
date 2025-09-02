@@ -64,7 +64,22 @@
       {
         "date": "30.08.2025",
         "start": 1756578138501,
-        "end": 1756578138501
+        "end": 1756581425954
+      },
+      {
+        "date": "01.09.2025",
+        "start": 1756716046516,
+        "end": 1756734584416
+      },
+      {
+        "date": "01.09.2025",
+        "start": 1756734587840,
+        "end": 1756796649685
+      },
+      {
+        "date": "02.09.2025",
+        "start": 1756797974279,
+        "end": 1756797974279
       }
     ],
     "files": [
@@ -107,7 +122,12 @@
       "skill.html",
       "skill.scss",
       "work.html",
-      "work.scss"
+      "work.scss",
+      "iconfont.html",
+      "iconfont.svg",
+      "iconfont.woff2",
+      "iconfont.ttf",
+      "item.scss"
     ]
   }
 }

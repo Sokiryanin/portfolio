@@ -135,9 +135,9 @@ export default {
     '@pug': 'src/pug'
   },
   coffee: {
-    enable: true,
+    enable: false,
     text: `(!!)Досить працювати, зроби перерву ☕️`,
-    interval: 45
+    interval: 60
   },
   novaposhta: {
     enable: false,

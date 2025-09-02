@@ -1,11 +1,9 @@
 .page {
   // .page--home
-
   &--home {
   }
 
   // .page__hero
-
   &__hero {
   }
 
@@ -14,11 +12,14 @@
   }
 
   // .page__skills
-
   &__skills {
   }
   // .page__selected-work
   &__selected-work {
+  }
+
+  // .page__process
+  &__process {
   }
 }
 
@@ -104,3 +105,133 @@
 }
 
 //========================================================================================================================================================
+
+/* ========== Process page ========== */
+
+.process {
+  counter-reset: item;
+
+  // .process__container
+
+  &__container {
+  }
+
+  // .process__blockhead
+
+  &__blockhead {
+    @include adaptiveValue('margin-bottom', 48, 16);
+  }
+
+  // .process__items
+
+  &__items {
+  }
+}
+
+.items-process {
+  // .items-process__header
+
+  &__header {
+    position: relative;
+    height: 158px;
+    @include adaptiveValue('height', 158, 80);
+    display: grid;
+    grid-template-rows: 46px 1fr;
+    gap: 16px;
+    justify-items: center;
+    &::after {
+      content: '';
+      width: 1px;
+      background-color: $greyColor;
+    }
+  }
+
+  // .items-process__arrow
+
+  &__arrow {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid $greyColor;
+    background-color: $mutedColor;
+    border-radius: 50%;
+  }
+
+  // .items-process__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .items-process__item
+
+  &__item {
+  }
+}
+
+.item-process {
+  position: relative;
+  width: 50%;
+  padding-left: 99.5px;
+  align-self: flex-end;
+
+  &::before {
+    content: '';
+    left: 0px;
+
+    position: absolute;
+    background-color: $greyColor;
+    width: 1px;
+    height: 100%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1px;
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    counter-increment: item;
+    content: counter(item, decimal-leading-zero);
+    width: 40px;
+    height: 40px;
+    outline: 16px solid $bgColor;
+    text-align: center;
+    align-content: center;
+    border: 1px solid $greyColor;
+    background-color: #181715;
+    border-radius: 50%;
+  }
+
+  // .item-process__body
+
+  &__body {
+  }
+
+  &:nth-child(even) {
+    padding-right: 99.5px;
+    padding-left: 0px;
+    align-self: flex-start;
+
+    &::before {
+      left: auto;
+      right: -1px;
+    }
+
+    &::after {
+      right: 0px;
+      transform: translate(50%, -50%);
+      left: auto;
+    }
+  }
+
+  &:not(:first-child) {
+    transform: translate(0, -50px);
+  }
+}
