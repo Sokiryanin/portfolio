@@ -104,11 +104,10 @@
   }
 }
 
-//========================================================================================================================================================
-
 /* ========== Process page ========== */
 
 .process {
+  @include adaptiveValue('padding-bottom', 160, 60);
   counter-reset: item;
 
   // .process__container
@@ -133,16 +132,20 @@
 
   &__header {
     position: relative;
-    height: 158px;
-    @include adaptiveValue('height', 158, 80);
+    @include adaptiveValue('height', 158, 20);
     display: grid;
     grid-template-rows: 46px 1fr;
     gap: 16px;
     justify-items: center;
+
     &::after {
       content: '';
       width: 1px;
       background-color: $greyColor;
+    }
+
+    @media (max-width: toEm(889.98)) {
+      display: none;
     }
   }
 
@@ -150,12 +153,16 @@
 
   &__arrow {
     width: 46px;
-    height: 46px;
+    aspect-ratio: 1;
     text-align: center;
     align-content: center;
     border: 1px solid $greyColor;
     background-color: $mutedColor;
     border-radius: 50%;
+
+    @media (max-width: toEm(889.98)) {
+      width: 46px;
+    }
   }
 
   // .items-process__body
@@ -173,14 +180,12 @@
 
 .item-process {
   position: relative;
-  width: 50%;
-  padding-left: 99.5px;
-  align-self: flex-end;
+
+  @include adaptiveValue('padding-left', 99.5, 50, 2, $containerWidth, 890);
 
   &::before {
     content: '';
     left: 0px;
-
     position: absolute;
     background-color: $greyColor;
     width: 1px;
@@ -214,24 +219,59 @@
   &__body {
   }
 
-  &:nth-child(even) {
-    padding-right: 99.5px;
-    padding-left: 0px;
-    align-self: flex-start;
-
+  &:last-child {
     &::before {
-      left: auto;
-      right: -1px;
-    }
-
-    &::after {
-      right: 0px;
-      transform: translate(50%, -50%);
-      left: auto;
+      height: 50%;
     }
   }
 
-  &:not(:first-child) {
-    transform: translate(0, -50px);
+  @media (min-width: toEm(890)) {
+    width: 50%;
+    align-self: flex-end;
+
+    &:not(:first-child) {
+      margin-top: -50px;
+    }
+
+    &:nth-child(even) {
+      @include adaptiveValue(
+        'padding-right',
+        99.5,
+        50,
+        2,
+        $containerWidth,
+        890
+      );
+      padding-left: 0px;
+      align-self: flex-start;
+
+      &::before {
+        left: auto;
+        right: -1px;
+      }
+
+      &::after {
+        right: 0px;
+        transform: translate(50%, -50%);
+        left: auto;
+      }
+    }
+  }
+
+  @media (max-width: toEm(889.98)) {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      // display: none;
+      top: 10px;
+      left: 10px;
+      outline: 5px solid $bgColor;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }

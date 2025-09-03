@@ -1,8 +1,11 @@
 .item {
+  position: relative;
   border: 1px solid $greyColor;
   background-color: #181715;
   border-radius: 2px;
-  @include adaptiveValue('padding', 48, 20);
+  @include adaptiveValue('padding-inline', 48, 20);
+  @include adaptiveValue('padding-bottom', 48, 20);
+  @include adaptiveValue('padding-top', 48, 30);
 
   > * {
     margin-bottom: 16px;
@@ -13,8 +16,9 @@
   &__time {
     position: absolute;
     padding: 8px;
-    top: 20px;
-    right: 20px;
+    @include adaptiveValue('top', 20, 10);
+    @include adaptiveValue('right', 20, 10);
+
     border-radius: 2px;
     border: 1px solid $greyColor;
     background-color: #181715;
@@ -28,6 +32,7 @@
   // .item__label
 
   &__label {
+    padding-right: 70px;
     font-family: $fontSecondary;
     font-weight: 400;
     font-size: 13px;
