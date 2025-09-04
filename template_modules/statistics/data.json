@@ -84,7 +84,12 @@
       {
         "date": "03.09.2025",
         "start": 1756891711164,
-        "end": 1756891711164
+        "end": 1756912910689
+      },
+      {
+        "date": "04.09.2025",
+        "start": 1756971041561,
+        "end": 1756971041561
       }
     ],
     "files": [
@@ -128,7 +133,10 @@
       "skill.scss",
       "work.html",
       "work.scss",
-      "item.scss"
+      "item.scss",
+      "borderitem.scss",
+      "border.scss",
+      "masonry.js"
     ]
   }
 }

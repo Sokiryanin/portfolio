@@ -38,6 +38,7 @@
       font-size: 80px;
     }
     &--size-96 {
+      @include adaptiveValue('font-size', 96, 40);
       font-size: 96px;
     }
     &--size-160 {
