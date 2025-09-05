@@ -147,7 +147,8 @@
       "borderitem.scss",
       "border.scss",
       "masonry.js",
-      "masonry.scss"
+      "masonry.scss",
+      "social.scss"
     ]
   }
 }

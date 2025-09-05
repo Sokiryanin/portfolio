@@ -26,6 +26,8 @@
   }
 }
 
+/* ========== Hero section ========== */
+
 .hero {
   // .hero__container
 
@@ -41,7 +43,7 @@
 
   &__image {
     width: 100vw;
-    height: 65svh;
+    height: 60svh;
     object-fit: contain;
     mix-blend-mode: lighten;
   }
@@ -308,6 +310,7 @@
 }
 
 .item-review {
+  border-radius: 2px;
   @include adaptiveValue('padding', 48, 20);
   > * {
     margin-bottom: 32px;
@@ -409,9 +412,36 @@
 /* ========== About-module section ========== */
 
 .about-module {
-  // .about-module__page
+  @include adaptiveValue('padding-bottom', 232, 60);
+  // .about-module__header
 
-  &__page {
+  &__header {
+    position: relative;
+  }
+
+  // .about-module__image
+
+  &__image {
+    width: 100vw;
+    height: 50svh;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+  }
+
+  // .about-module__name
+
+  &__name {
+  }
+
+  // .about-module__body
+
+  &__body {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    @include adaptiveValue('column-gap', 64, 20);
+    row-gap: 20px;
   }
 
   // .about-module__container
@@ -419,34 +449,36 @@
   &__container {
   }
 
-  // .about-module__header
-
-  &__header {
-  }
-
-  // .about-module__image
-
-  &__image {
-  }
-
-  // .about-module__name-title
-
-  &__name-title {
-  }
-
-  // .about-module__body
-
-  &__body {
-  }
-
   // .about-module__title
 
   &__title {
+    flex: 1 1 100px;
+    font-family: $fontSecondary;
+    @include adaptiveValue('font-size', 48, 32);
+    font-weight: 300;
+    color: $lightColor;
+
+    span {
+      display: block;
+      font-family: $fontItalic;
+    }
+  }
+
+  // .about-module__content
+
+  &__content {
+    flex: 1 1 100px;
   }
 
   // .about-module__text
 
   &__text {
+    font-size: 18px;
+    line-height: 1.6;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 
   // .about-module__social
@@ -454,33 +486,22 @@
   &__social {
   }
 }
-.social {
-  // .social__item
+
+.name-about {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 0 -50%;
+  @include adaptiveValue('font-size', 128, 45);
+  // .name-about__item
 
   &__item {
-  }
+    font-family: $fontSecondary;
+    font-weight: 300;
+    color: $lightColor;
 
-  // .social__link
-
-  &__link {
-    // .social__link--icon-s-x
-
-    &--icon-s-x {
-    }
-
-    // .social__link--icon-s-inst
-
-    &--icon-s-inst {
-    }
-
-    // .social__link--icon-s-drb
-
-    &--icon-s-drb {
-    }
-
-    // .social__link--icon-s-beh
-
-    &--icon-s-beh {
+    span {
+      font-family: $fontItalic;
     }
   }
 }
