@@ -308,8 +308,6 @@
 }
 
 .item-review {
-  width: 50%;
-
   @include adaptiveValue('padding', 48, 20);
   > * {
     margin-bottom: 32px;
@@ -333,6 +331,12 @@
     color: $lightColor;
 
     margin-bottom: 8px;
+    transition: color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $lightColorHover;
+      }
+    }
   }
 
   // .item-review__link-title
@@ -353,6 +357,10 @@
 
   > *:last-child {
     margin-bottom: 0px;
+  }
+
+  @media (min-width: toEm(750)) {
+    width: calc(50% - 16px);
   }
 }
 

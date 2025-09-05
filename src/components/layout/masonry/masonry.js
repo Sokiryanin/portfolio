@@ -10,9 +10,8 @@ function masonryRun() {
   const isotope = document.querySelector('[data-fls-masonry]');
   const isotopeItems = new Isotope(isotope, {
     itemSelector: '[data-fls-masonry-item]',
+    percentPosition: true,
     masonry: {
-      percentPosition: true,
-      fitWidth: true,
       gutter: 32
     }
   });
