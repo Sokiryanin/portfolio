@@ -52,7 +52,7 @@
   }
 }
 
-/* ========== Clients page ========== */
+/* ========== Clients section ========== */
 
 .clients {
   // .clients__conatiner
@@ -70,7 +70,7 @@
   }
 }
 
-/* ========== Works page ========== */
+/* ========== Works section ========== */
 
 .selected-work {
   @include adaptiveValue('padding-bottom', 160, 60);
@@ -107,7 +107,7 @@
   }
 }
 
-/* ========== Process page ========== */
+/* ========== Process section ========== */
 
 .process {
   @include adaptiveValue('padding-bottom', 160, 60);
@@ -279,7 +279,7 @@
   }
 }
 
-/* ========== Reviews page  ========== */
+/* ========== Reviews section  ========== */
 
 .reviews {
   // .reviews__container
@@ -403,5 +403,84 @@
   &__company {
     font-weight: 300;
     font-size: 14px;
+  }
+}
+
+/* ========== About-module section ========== */
+
+.about-module {
+  // .about-module__page
+
+  &__page {
+  }
+
+  // .about-module__container
+
+  &__container {
+  }
+
+  // .about-module__header
+
+  &__header {
+  }
+
+  // .about-module__image
+
+  &__image {
+  }
+
+  // .about-module__name-title
+
+  &__name-title {
+  }
+
+  // .about-module__body
+
+  &__body {
+  }
+
+  // .about-module__title
+
+  &__title {
+  }
+
+  // .about-module__text
+
+  &__text {
+  }
+
+  // .about-module__social
+
+  &__social {
+  }
+}
+.social {
+  // .social__item
+
+  &__item {
+  }
+
+  // .social__link
+
+  &__link {
+    // .social__link--icon-s-x
+
+    &--icon-s-x {
+    }
+
+    // .social__link--icon-s-inst
+
+    &--icon-s-inst {
+    }
+
+    // .social__link--icon-s-drb
+
+    &--icon-s-drb {
+    }
+
+    // .social__link--icon-s-beh
+
+    &--icon-s-beh {
+    }
   }
 }
