@@ -99,7 +99,27 @@
       {
         "date": "05.09.2025",
         "start": 1757077384122,
-        "end": 1757077384122
+        "end": 1757082963741
+      },
+      {
+        "date": "05.09.2025",
+        "start": 1757087601279,
+        "end": 1757088170534
+      },
+      {
+        "date": "05.09.2025",
+        "start": 1757088173508,
+        "end": 1757088244796
+      },
+      {
+        "date": "05.09.2025",
+        "start": 1757088247748,
+        "end": 1757089333013
+      },
+      {
+        "date": "06.09.2025",
+        "start": 1757155376899,
+        "end": 1757155376899
       }
     ],
     "files": [
@@ -148,7 +168,12 @@
       "border.scss",
       "masonry.js",
       "masonry.scss",
-      "social.scss"
+      "social.scss",
+      "iconfont.html",
+      "iconfont.svg",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "arik2.png"
     ]
   }
 }

@@ -417,12 +417,46 @@
 
   &__header {
     position: relative;
+    text-align: center;
+    @include adaptiveValue('margin-bottom', 50, 30);
+  }
+
+  // .about-module__picture
+  &__picture {
+    display: inline-block;
+    background-color: $bgColor;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 50px 50px rgba(14, 14, 14, 1);
+
+    // &::before,
+    // &::after {
+    //   content: '';
+    //   background-image: linear-gradient(
+    //     90deg,
+    //     rgba(14, 14, 14, 0) 0%,
+    //     rgba(14, 14, 14, 1) 100%
+    //   );
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 20vw;
+    //   top: 0;
+    // }
+    // &::before {
+    //   left: 0;
+    //   transform: translate(-100%, 0);
+    // }
+    // &::after {
+    //   right: 0;
+    //   transform: translate(100%, 0);
+    //   transform: rotate(180deg);
+    // }
   }
 
   // .about-module__image
 
   &__image {
-    width: 100vw;
+    // width: 100vw;
     height: 50svh;
     object-fit: contain;
     mix-blend-mode: lighten;
@@ -436,12 +470,17 @@
   // .about-module__body
 
   &__body {
+    @include adaptiveValue('padding-top', 40, 20);
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 10px;
     @include adaptiveValue('column-gap', 64, 20);
-    row-gap: 20px;
+
+    @media (max-width: toEm($mobile)) {
+      flex-direction: column;
+    }
   }
 
   // .about-module__container
@@ -452,11 +491,12 @@
   // .about-module__title
 
   &__title {
-    flex: 1 1 100px;
+    flex: 1 1 1px;
     font-family: $fontSecondary;
     @include adaptiveValue('font-size', 48, 32);
     font-weight: 300;
     color: $lightColor;
+    line-height: 1.1;
 
     span {
       display: block;
@@ -489,13 +529,16 @@
 
 .name-about {
   position: absolute;
+
   top: 50%;
   left: 0;
   translate: 0 -50%;
   @include adaptiveValue('font-size', 128, 45);
+
   // .name-about__item
 
   &__item {
+    margin-right: 100px;
     font-family: $fontSecondary;
     font-weight: 300;
     color: $lightColor;
