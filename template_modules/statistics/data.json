@@ -119,7 +119,12 @@
       {
         "date": "06.09.2025",
         "start": 1757155376899,
-        "end": 1757155376899
+        "end": 1757161272040
+      },
+      {
+        "date": "06.09.2025",
+        "start": 1757161274979,
+        "end": 1757161274979
       }
     ],
     "files": [
@@ -173,7 +178,10 @@
       "iconfont.svg",
       "iconfont.ttf",
       "iconfont.woff2",
-      "arik2.png"
+      "arik2.png",
+      "letstalk.html",
+      "main.html",
+      "letstalk.scss"
     ]
   }
 }
