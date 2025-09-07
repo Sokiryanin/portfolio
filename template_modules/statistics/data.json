@@ -186,7 +186,10 @@
       "arik2.png",
       "letstalk.html",
       "main.html",
-      "letstalk.scss"
+      "letstalk.scss",
+      "footer.html",
+      "footer.scss",
+      "spollers.scss"
     ]
   }
 }
