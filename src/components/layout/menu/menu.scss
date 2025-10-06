@@ -112,6 +112,12 @@
     @media (max-width: toEm($mobile)) {
       font-size: 24px;
     }
+    &--active {
+      &::after {
+        width: 100%;
+        background-color: $lightColorHover;
+      }
+    }
   }
 }
 

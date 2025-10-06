@@ -144,7 +144,17 @@
       {
         "date": "08.09.2025",
         "start": 1757325353105,
-        "end": 1757325353105
+        "end": 1757344969983
+      },
+      {
+        "date": "22.09.2025",
+        "start": 1758550800461,
+        "end": 1758614796215
+      },
+      {
+        "date": "06.10.2025",
+        "start": 1759751492258,
+        "end": 1759751492258
       }
     ],
     "files": [
@@ -204,7 +214,9 @@
       "letstalk.scss",
       "footer.html",
       "footer.scss",
-      "spollers.scss"
+      "spollers.scss",
+      "scrollto.js",
+      "services.html"
     ]
   }
 }
