@@ -159,7 +159,12 @@
       {
         "date": "06.10.2025",
         "start": 1759758013422,
-        "end": 1759758013422
+        "end": 1759828513489
+      },
+      {
+        "date": "07.10.2025",
+        "start": 1759828517313,
+        "end": 1759828517313
       }
     ],
     "files": [
@@ -222,7 +227,10 @@
       "spollers.scss",
       "scrollto.js",
       "services.html",
-      "services.scss"
+      "services.scss",
+      "1.jpg",
+      "4.jpg",
+      "3.jpg"
     ]
   }
 }
