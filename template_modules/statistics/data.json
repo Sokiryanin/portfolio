@@ -179,7 +179,12 @@
       {
         "date": "16.10.2025",
         "start": 1760615301509,
-        "end": 1760615301509
+        "end": 1760617700834
+      },
+      {
+        "date": "16.10.2025",
+        "start": 1760617704191,
+        "end": 1760617704191
       }
     ],
     "files": [
@@ -245,7 +250,10 @@
       "services.scss",
       "1.jpg",
       "4.jpg",
-      "3.jpg"
+      "3.jpg",
+      "about.html",
+      "arik-about.png",
+      "arik-article.jpg"
     ]
   }
 }

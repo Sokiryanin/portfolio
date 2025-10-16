@@ -1,0 +1,42 @@
+.page {
+  &--about {
+    @include adaptiveValue('padding-top', 224, 100);
+    @include adaptiveValue('padding-bottom', 160, 30);
+  }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.about {
+  // .about__container
+
+  &__container {
+    display: flex;
+    row-gap: 30px;
+    @include adaptiveValue('column-gap', 80, 30);
+  }
+
+  // .about__picture
+
+  &__picture {
+    flex: 1 1 520px;
+  }
+
+  // .about__image
+
+  &__image {
+    mix-blend-mode: lighten;
+  }
+
+  // .about__body
+
+  &__body {
+    flex: 1 1 800px;
+    @include adaptiveValue('padding-top', 64, 0);
+  }
+
+  &__blockhead {
+    &:not(:last-child) {
+      @include adaptiveValue('margin-bottom', 64, 20);
+    }
+  }
+}
