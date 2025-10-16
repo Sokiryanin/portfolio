@@ -1,62 +1,69 @@
-@font-face { 
+/* @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
 	src: url("/Users/leftsider/Desktop/FullStack/Projects/portfolio/portfolio/src/assets/svgicons/preview/iconfont.woff2?83ee56a8b7961f07e164072e0548ddf4") format("woff2"); 
-} 
-[class*="--icon-"]::before{
-	font-family: iconfont; 
+}  */
+
+@font-face {
+  font-family: 'iconfont';
+  font-display: swap;
+  src: url('@/assets/svgicons/preview/iconfont.woff2') format('woff2');
 }
-	[class*="--icon-s-ytb"]::before { 
-		content: "\f101"; 
-	} 
-	[class*="--icon-s-x"]::before { 
-		content: "\f102"; 
-	} 
-	[class*="--icon-s-wats"]::before { 
-		content: "\f103"; 
-	} 
-	[class*="--icon-s-twch"]::before { 
-		content: "\f104"; 
-	} 
-	[class*="--icon-s-tictok"]::before { 
-		content: "\f105"; 
-	} 
-	[class*="--icon-s-pint"]::before { 
-		content: "\f106"; 
-	} 
-	[class*="--icon-s-inst"]::before { 
-		content: "\f107"; 
-	} 
-	[class*="--icon-s-fb"]::before { 
-		content: "\f108"; 
-	} 
-	[class*="--icon-s-drb"]::before { 
-		content: "\f109"; 
-	} 
-	[class*="--icon-s-beh"]::before { 
-		content: "\f10a"; 
-	} 
-	[class*="--icon-plus"]::before { 
-		content: "\f10b"; 
-	} 
-	[class*="--icon-phone"]::before { 
-		content: "\f10c"; 
-	} 
-	[class*="--icon-minus"]::before { 
-		content: "\f10d"; 
-	} 
-	[class*="--icon-mail"]::before { 
-		content: "\f10e"; 
-	} 
-	[class*="--icon-link"]::before { 
-		content: "\f10f"; 
-	} 
-	[class*="--icon-info"]::before { 
-		content: "\f110"; 
-	} 
-	[class*="--icon-check"]::before { 
-		content: "\f111"; 
-	} 
-	[class*="--icon-arrow"]::before { 
-		content: "\f112"; 
-	} 
+
+[class*='--icon-']::before {
+  font-family: iconfont;
+}
+[class*='--icon-s-ytb']::before {
+  content: '\f101';
+}
+[class*='--icon-s-x']::before {
+  content: '\f102';
+}
+[class*='--icon-s-wats']::before {
+  content: '\f103';
+}
+[class*='--icon-s-twch']::before {
+  content: '\f104';
+}
+[class*='--icon-s-tictok']::before {
+  content: '\f105';
+}
+[class*='--icon-s-pint']::before {
+  content: '\f106';
+}
+[class*='--icon-s-inst']::before {
+  content: '\f107';
+}
+[class*='--icon-s-fb']::before {
+  content: '\f108';
+}
+[class*='--icon-s-drb']::before {
+  content: '\f109';
+}
+[class*='--icon-s-beh']::before {
+  content: '\f10a';
+}
+[class*='--icon-plus']::before {
+  content: '\f10b';
+}
+[class*='--icon-phone']::before {
+  content: '\f10c';
+}
+[class*='--icon-minus']::before {
+  content: '\f10d';
+}
+[class*='--icon-mail']::before {
+  content: '\f10e';
+}
+[class*='--icon-link']::before {
+  content: '\f10f';
+}
+[class*='--icon-info']::before {
+  content: '\f110';
+}
+[class*='--icon-check']::before {
+  content: '\f111';
+}
+[class*='--icon-arrow']::before {
+  content: '\f112';
+}
