@@ -4,10 +4,16 @@
 	src: url("/Users/leftsider/Desktop/FullStack/Projects/portfolio/portfolio/src/assets/svgicons/preview/iconfont.woff2?83ee56a8b7961f07e164072e0548ddf4") format("woff2"); 
 }  */
 
-@font-face {
+/* @font-face {
   font-family: 'iconfont';
   font-display: swap;
   src: url('@/assets/svgicons/preview/iconfont.woff2') format('woff2');
+} */
+
+@font-face {
+  font-family: 'iconfont';
+  font-display: swap;
+  src: url('/fonts/iconfont.woff2') format('woff2');
 }
 
 [class*='--icon-']::before {
