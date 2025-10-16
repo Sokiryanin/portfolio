@@ -1,0 +1,26 @@
+<header data-fls-header class="header">
+  <div class="header__container">
+    <div class="header__body">
+      <!-- условие если home true - то просто картинка, иначе ссылка на главную -->
+
+      <if condition="'[[home]]' === 'true'">
+        <img class="header__logo" src="@img/logo.svg" alt="Image" />
+      </if>
+      <else>
+        <a href="index.html" class="header__link-logo">
+          <img class="header__logo" src="@img/logo.svg" alt="Image" />
+        </a>
+      </else>
+      <include
+        src="@components/layout/menu/menu.html"
+        locals='{"active":"[[active]]"}'
+      ></include>
+      <a href="#" data-fls-button class="header__button button button--light"
+        >Let's talk</a
+      >
+      <button type="button" data-fls-menu class="icon-menu">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>

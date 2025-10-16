@@ -1,0 +1,510 @@
+<script type="module" src="@components/pages/home/home.js"></script>
+<link rel="stylesheet" href="@components/pages/home/home.scss" />
+
+<main class="page page--home">
+  <section class="page__hero hero">
+    <div class="hero__container">
+      <img class="hero__image" src="@img/arik.png" alt="Image" />
+      <div data-fls-blockhead class="hero__blockhead blockhead">
+        <span class="blockhead__label"></span>
+        <h1 class="blockhead__title blockhead__title--size-160">
+          Web Designer<span>& Developer</span>
+        </h1>
+        <div class="blockhead__text blockhead__text--size-24">
+          <p>
+            Premium web design, development, and SEO services to help your
+            business stand out.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__clients clients">
+    <ul class="clients__container">
+      <li class="clients__item">
+        <img src="@img/clients/1.svg" alt="Image" />
+      </li>
+      <li class="clients__item">
+        <img src="@img/clients/2.svg" alt="Image" />
+      </li>
+      <li class="clients__item">
+        <img src="@img/clients/3.svg" alt="Image" />
+      </li>
+      <li class="clients__item">
+        <img src="@img/clients/4.svg" alt="Image" />
+      </li>
+      <li class="clients__item">
+        <img src="@img/clients/5.svg" alt="Image" />
+      </li>
+      <li class="clients__item">
+        <img src="@img/clients/6.svg" alt="Image" />
+      </li>
+    </ul>
+  </section>
+
+  <section class="page__skills skills">
+    <div class="skills__container">
+      <include
+        src="@components/custom/skill/skill.html"
+        locals='{
+        "title": "Web Design",
+        "text": "Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.",
+        "button": "About webdesign"
+      }'
+      ></include>
+      <include
+        src="@components/custom/skill/skill.html"
+        locals='{
+        "title": "Development",
+        "text": "Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.",
+        "button": "About webflow"
+      }'
+      ></include>
+      <include
+        src="@components/custom/skill/skill.html"
+        locals='{
+        "title": "Content & Seo",
+        "text": "Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.",
+        "button": "About seo"
+      }'
+      ></include>
+    </div>
+  </section>
+
+  <section class="page__selected-work selected-work">
+    <div class="selected-work__container">
+      <div class="selected-work__header">
+        <h2 class="selected-work__title">Selected <span>Work</span></h2>
+        <a
+          href="#"
+          data-fls-button
+          class="button button--text button--icon-arrow button--arrow-ur"
+          >See all
+        </a>
+      </div>
+
+      <div class="selected-work__items works">
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/1.jpg",
+        "name": "Space",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/2.jpg",
+        "name": "Nova",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/3.jpg",
+        "name": "Sonic",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+        <include
+          src="@components/custom/work/work.html"
+          locals='{
+        "image": "@img/works/4.jpg",
+        "name": "Solar",
+        "category": "Webdesign",
+        "category-link": "#",
+        "link": "#"
+        }'
+        ></include>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__process process">
+    <div class="process__container">
+      <div data-fls-blockhead class="process__blockhead blockhead">
+        <span class="blockhead__label">The process</span>
+        <h2 class="blockhead__title">
+          Your Website
+          <span>in 5 steps</span>
+        </h2>
+        <div class="blockhead__text">
+          <p>
+            Our process ensures that we create a website tailored to your
+            business needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="process__items items-process">
+        <div class="items-process__header">
+          <div
+            class="items-process__arrow items-process__arrow--icon-arrow items-process__arrow--arrow-d"
+          ></div>
+        </div>
+        <div class="items-process__body">
+          <div class="items-process__item item-process">
+            <article data-fls-item class="item-process__body item">
+              <div class="item__time">2 Hours</div>
+              <div class="item__label">Do we Match?</div>
+              <h4 class="item__title">Discovery Call</h4>
+              <div class="item__text">
+                <p>
+                  Before we start, we determine if and how I can help you. What
+                  are your requirements for your new website? Why do you need a
+                  new website? What goals do you have, and what problems can we
+                  solve with a new website?
+                </p>
+              </div>
+              <ul class="item__list">
+                <li class="item__item">We get to know each other better</li>
+                <li class="item__item">Determine how I can best assist you</li>
+                <li class="item__item">
+                  Understand the goals you have for your website
+                </li>
+              </ul>
+            </article>
+          </div>
+          <div class="items-process__item item-process">
+            <article data-fls-item class="item-process__body item">
+              <div class="item__time">1 week</div>
+              <div class="item__label">Our concept</div>
+              <h4 class="item__title">Concept & STrategy</h4>
+              <div class="item__text">
+                <p>
+                  Together, we develop a strategy that successfully combines
+                  your goals with the needs of your target audience. Based on
+                  this concept, I create the first wireframes and an interactive
+                  prototype. This provides us with a very good impression of the
+                  website and the user interface.
+                </p>
+              </div>
+              <ul class="item__list">
+                <li class="item__item">UX Design</li>
+                <li class="item__item">Wireframes</li>
+                <li class="item__item">Interactive Prototype</li>
+              </ul>
+            </article>
+          </div>
+          <div class="items-process__item item-process">
+            <article data-fls-item class="item-process__body item">
+              <div class="item__time">1 week</div>
+              <div class="item__label">SOme MAgic</div>
+              <h4 class="item__title">web Design</h4>
+              <div class="item__text">
+                <p>
+                  Now comes the magic. Based on the previously developed
+                  concept, I create a high-end screen design perfectly tailored
+                  to your brand. A web design that sets you apart from your
+                  competition, fits your target audience ideally, and provides
+                  an excellent user experience.
+                </p>
+              </div>
+              <ul class="item__list">
+                <li class="item__item">
+                  High-end web design tailored to your brand
+                </li>
+
+                <li class="item__item">Interactive prototype of the design</li>
+              </ul>
+            </article>
+          </div>
+          <div class="items-process__item item-process">
+            <article data-fls-item class="item-process__body item">
+              <div class="item__time">2 weeks</div>
+              <div class="item__label">More MAgic</div>
+              <h4 class="item__title">Development</h4>
+              <div class="item__text">
+                <p>
+                  In this step, we breathe life into your new high-end design.
+                  You will receive a custom-built website using a modular web
+                  design system and CMS integration. Animations will add the
+                  necessary flair to your site and set you apart from the boring
+                  competition.
+                </p>
+              </div>
+              <ul class="item__list">
+                <li class="item__item">Custom framer website</li>
+
+                <li class="item__item">Modular web design systems</li>
+                <li class="item__item">CMS integration</li>
+              </ul>
+            </article>
+          </div>
+          <div class="items-process__item item-process">
+            <article data-fls-item class="item-process__body item">
+              <div class="item__time">2 hours</div>
+              <div class="item__label">Ready to go</div>
+              <h4 class="item__title">WEbsite onboarding</h4>
+              <div class="item__text">
+                <p>
+                  In a personal Framer workshop, I will show you how to make
+                  changes to your new website quickly and easily. Additionally,
+                  you will receive personalized Framer video tutorials that you
+                  can access at any time. Edit your Framer website without a
+                  complicated backend or the need for an additional programmer.
+                  It's as simple as that.
+                </p>
+              </div>
+              <ul class="item__list">
+                <li class="item__item">Personal workshop</li>
+
+                <li class="item__item">Personalized video tutorialss</li>
+                <li class="item__item">
+                  Edit text and images directly on your website
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__reviews reviews">
+    <div class="reviews__container">
+      <div data-fls-blockhead class="reviews__blockhead blockhead">
+        <h2 class="blockhead__title blockhead__title--size-96">
+          What my <span>clients say</span>
+        </h2>
+        <div class="blockhead__text blockhead__text--size-18">
+          <p>
+            See what my clients have to say about working with me and the
+            results I helped them achieve.
+          </p>
+        </div>
+      </div>
+
+      <div data-fls-masonry class="reviews__items">
+        <div class="reviews__grid"></div>
+        <article
+          data-fls-masonry-item
+          data-fls-border
+          class="reviews__item item-review"
+        >
+          <img
+            src="@img/clients/3.svg"
+            alt="client"
+            class="item-review__icon"
+          />
+          <h4 class="item-review__title">
+            <a href="#" class="item-review__link-title"
+              >Amazing Results with Arik’s Premium Web Design Services.</a
+            >
+          </h4>
+          <div class="item-review__text">
+            <p>
+              Arik is a top-notch web designer who created a stunning website
+              for my business. He was attentive to my needs and provided
+              excellent customer service throughout the entire process. I highly
+              recommend his services.
+            </p>
+          </div>
+
+          <div class="item-review__author author-review">
+            <img
+              src="@img/reviews/js.jpg"
+              alt="avatar"
+              class="author-review__avatar"
+            />
+
+            <div class="author-review__body">
+              <div class="author-review__name">John Smith</div>
+              <div class="author-review__company">ABC Company</div>
+            </div>
+          </div>
+        </article>
+        <article
+          data-fls-masonry-item
+          data-fls-border
+          class="reviews__item item-review"
+        >
+          <img
+            src="@img/clients/6.svg"
+            alt="client"
+            class="item-review__icon"
+          />
+          <h4 class="item-review__title">
+            <a href="#" class="item-review__link-title"
+              >Expert Webflow and SEO Services: Excellent Work, Great
+              Results.</a
+            >
+          </h4>
+          <div class="item-review__text">
+            <p>
+              Working with Arik on my website redesign was a fantastic
+              experience. He was able to take my vision and turn it into a
+              beautiful and functional website. His attention to detail and
+              creative approach is unmatched. I couldn't be happier with the end
+              result.
+            </p>
+          </div>
+
+          <div class="item-review__author author-review">
+            <img
+              src="@img/reviews/david.jpg"
+              alt="avatar"
+              class="author-review__avatar"
+            />
+
+            <div class="author-review__body">
+              <div class="author-review__name">David Kim</div>
+              <div class="author-review__company">Design Inc.</div>
+            </div>
+          </div>
+        </article>
+        <article
+          data-fls-masonry-item
+          data-fls-border
+          class="reviews__item item-review"
+        >
+          <img
+            src="@img/clients/2.svg"
+            alt="client"
+            class="item-review__icon"
+          />
+          <h4 class="item-review__title">
+            <a href="#" class="item-review__link-title"
+              >Professional, Collaborative Web Design Experience with Arik.</a
+            >
+          </h4>
+          <div class="item-review__text">
+            <p>
+              I had the pleasure of working with Arik on a website development
+              project and was blown away by his expertise and professionalism.
+              He made the process seamless and delivered a website that exceeded
+              our expectations. I highly recommend Arik for all your web
+              development needs.
+            </p>
+          </div>
+
+          <div class="item-review__author author-review">
+            <img
+              src="@img/reviews/karen.jpg"
+              alt="avatar"
+              class="author-review__avatar"
+            />
+
+            <div class="author-review__body">
+              <div class="author-review__name">Karen Lee</div>
+              <div class="author-review__company">Redwood Technologies</div>
+            </div>
+          </div>
+        </article>
+        <article
+          data-fls-masonry-item
+          data-fls-border
+          class="reviews__item item-review"
+        >
+          <img
+            src="@img/clients/5.svg"
+            alt="client"
+            class="item-review__icon"
+          />
+          <h4 class="item-review__title">
+            <a href="#" class="item-review__link-title"
+              >Expertise in Web Design: Second to None with Arik.</a
+            >
+          </h4>
+          <div class="item-review__text">
+            <p>
+              Arik is not only an exceptional web designer, but also a pleasure
+              to work with. He took the time to understand my business and its
+              unique needs, and created a website that perfectly represents my
+              brand. I highly recommend Arik's services to anyone looking for a
+              top-quality web designer.
+            </p>
+          </div>
+
+          <div class="item-review__author author-review">
+            <img
+              src="@img/reviews/andrew.jpg"
+              alt="avatar"
+              class="author-review__avatar"
+            />
+
+            <div class="author-review__body">
+              <div class="author-review__name">Andrew Thompson</div>
+              <div class="author-review__company">Silverstone Corporation</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page__about-module about-module">
+    <div class="about-module__header">
+      <div class="about-module__picture">
+        <img src="@img/arik2.png" alt="arik" class="about-module__image" />
+      </div>
+
+      <div
+        data-fls-marquee
+        data-fls-marquee-speed="250"
+        class="about-module__name name-about"
+      >
+        <div class="name-about__item">Arik <span>Anderson</span></div>
+        <div class="name-about__item">Arik <span>Anderson</span></div>
+      </div>
+    </div>
+    <div class="about-module__container">
+      <div class="about-module__body">
+        <h4 class="about-module__title">
+          A website that leaves <span>a lasting impression!</span>
+        </h4>
+        <div class="about-module__content">
+          <div class="about-module__text">
+            <p>
+              Hi, I'm Arik Andersson - a freelancer specializing in premium web
+              design, development, and SEO services. I'm passionate about
+              creating unique and effective solutions for my clients, and I
+              bring a personal touch to every project. Let's work together to
+              bring your vision to life!
+            </p>
+          </div>
+          <ul data-fls-social class="about-module__social social">
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link social__link--icon-s-x"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link social__link--icon-s-inst"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link social__link--icon-s-drb"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link social__link--icon-s-beh"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

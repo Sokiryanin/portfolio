@@ -1,0 +1,90 @@
+//<BUTTONS (a.btn+tab)>
+// Сніппет (HTML): btn
+.button {
+  font-family: 'Satoshi';
+  font-size: 13px;
+  line-height: 1.8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: $lightColor;
+
+  display: inline-flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid $greyColor;
+  border-radius: 2px;
+  background-color: $mutedColor;
+  backdrop-filter: blur(15px);
+
+  transition: all 0.5s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $lightColor;
+      color: $darkColor;
+    }
+  }
+  &--light {
+    border: 1px solid $lightColor;
+    color: $darkColor;
+    background-color: $lightColor;
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $mutedColor;
+        color: $lightColor;
+      }
+    }
+  }
+  &--icon {
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 12px;
+  }
+
+  &--text {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    gap: 12px;
+
+    &::before {
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      align-content: center;
+      border: 1px solid $greyColor;
+      background-color: $mutedColor;
+      border-radius: 50%;
+      transition: all 0.5s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: $lightColor;
+        background-color: transparent;
+        &::before {
+          background-color: $lightColor;
+          color: $darkColor;
+        }
+      }
+    }
+  }
+
+  &--text-big {
+    &::before {
+      font-size: 15px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  &--text-rev {
+    flex-direction: row-reverse;
+  }
+
+  &--fw {
+    width: 100%;
+  }
+}

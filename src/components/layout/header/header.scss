@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  pointer-events: none;
+
+  @media (min-width: toEm($mobile)) {
+    top: 48px;
+  }
+
+  // .header__container
+  &__container {
+    pointer-events: auto;
+  }
+
+  &__logo,
+  &__link-logo,
+  &__button {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__body {
+    padding: 12px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid $greyColor;
+      background-color: $mutedColor;
+      backdrop-filter: blur(30px);
+      border-radius: 2px;
+      z-index: 2;
+    }
+
+    @media (min-width: toEm($mobile)) {
+      padding-left: 24px;
+      gap: 32px;
+    }
+  }
+
+  @media (min-width: toEm($mobile)) {
+    display: flex;
+    justify-content: center;
+  }
+}
