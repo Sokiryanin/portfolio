@@ -1,7 +1,7 @@
 <template
   src="@components/templates/main/main.html"
   locals='{
-		"title":"Services", 
+		"title":"About", 
 		"lang":"en",
 		"preloader": {
 			"enable":"false",
@@ -14,14 +14,11 @@
   <block name="header">
     <include
       src="@components/layout/header/header.html"
-      locals='{"active":"Services", "home": "false"}'
+      locals='{"active":"About", "home": "false"}'
     ></include>
   </block>
   <block name="main">
-    <include
-      src="@components/pages/services/services.html"
-      locals="{}"
-    ></include>
+    <include src="@components/pages/about/about.html" locals="{}"></include>
   </block>
   <block name="letstalk">
     <include src="@components/custom/letstalk/letstalk.html"></include>
