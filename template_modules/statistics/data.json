@@ -1,6 +1,31 @@
 {
   "statistics": {
-    "sessions": [],
-    "files": []
+    "sessions": [
+      {
+        "date": "01.03.2026",
+        "start": 1772364603179,
+        "end": 1772364660448
+      }
+    ],
+    "files": [
+      "check.svg",
+      "info.svg",
+      "link.svg",
+      "minus.svg",
+      "arrow.svg",
+      "mail.svg",
+      "s-pint.svg",
+      "s-ytb.svg",
+      "s-twch.svg",
+      "s-x.svg",
+      "plus.svg",
+      "s-wats.svg",
+      "s-fb.svg",
+      "s-inst.svg",
+      "s-beh.svg",
+      "s-tictok.svg",
+      "phone.svg",
+      "s-drb.svg"
+    ]
   }
 }
