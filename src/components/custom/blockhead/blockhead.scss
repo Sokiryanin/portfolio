@@ -1,0 +1,71 @@
+.blockhead {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  @include adaptiveValue('gap', 16, 8);
+
+  &--gap-8 {
+    gap: 8px;
+  }
+
+  &__label,
+  &__title {
+    color: $lightColor;
+    max-width: 1000px;
+    font-family: $fontSecondary;
+  }
+  // .blockhead__label
+  &__label {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  // .blockhead__title
+
+  &__title {
+    @include adaptiveValue('font-size', 128, 40);
+    font-weight: 300;
+
+    span {
+      display: block;
+      font-family: $fontItalic;
+    }
+
+    &--size-80 {
+      font-size: 80px;
+    }
+    &--size-96 {
+      @include adaptiveValue('font-size', 96, 40);
+      font-size: 96px;
+    }
+    &--size-160 {
+      //   font-size: 160px;
+      @include adaptiveValue('font-size', 160, 45);
+
+      @media (max-height: toEm(850)) {
+        @include adaptiveValue('font-size', 128, 45);
+      }
+    }
+  }
+
+  // .blockhead__text
+
+  &__text {
+    line-height: 1.7;
+    max-width: 600px;
+    @include adaptiveValue('font-size', 20, 15);
+
+    &--size-18 {
+      @include adaptiveValue('font-size', 18, 14);
+    }
+    &--size-24 {
+      @include adaptiveValue('font-size', 24, 16);
+    }
+  }
+  &__button {
+    margin-top: 24px;
+  }
+}

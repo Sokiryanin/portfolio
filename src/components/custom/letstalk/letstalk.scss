@@ -1,0 +1,32 @@
+.lets-talk {
+  background-color: $mutedColor;
+  // .lets-talk__line
+
+  &__line {
+  }
+
+  // .lets-talk__body
+
+  &__body {
+  }
+
+  // .lets-talk__container
+
+  &__container {
+    @include adaptiveValue('padding-block', 160, 60);
+  }
+}
+.line-talk {
+  // .line-talk__item
+
+  &__item {
+    @include adaptiveValue('padding-block', 16, 10);
+    font-family: $fontSecondary;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $lightColor;
+  }
+}

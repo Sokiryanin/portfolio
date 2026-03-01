@@ -1,0 +1,49 @@
+.social-blocks {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  // .social-blocks__item
+
+  &__item {
+  }
+
+  // .social-blocks__link
+  &__link {
+    color: $lightColor;
+    font-family: $fontSecondary;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    transition: all 0.5s;
+
+    @include adaptiveValue('padding-inline', 24, 15);
+    @include adaptiveValue('padding-block', 16, 10);
+
+    &::before {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    &::after {
+      line-height: 1;
+      font-size: 11px;
+      rotate: 45deg;
+      font-family: iconfont;
+      content: '\f112';
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $darkColor;
+        background-color: $lightColor;
+      }
+    }
+  }
+}
