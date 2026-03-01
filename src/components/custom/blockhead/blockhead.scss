@@ -35,11 +35,12 @@
     }
 
     &--size-80 {
-      font-size: 80px;
+      @include adaptiveValue('font-size', 80, 28);
+      // font-size: 80px;
     }
     &--size-96 {
       @include adaptiveValue('font-size', 96, 40);
-      font-size: 96px;
+      // font-size: 96px;
     }
     &--size-160 {
       //   font-size: 160px;

@@ -10,6 +10,16 @@
         "date": "01.03.2026",
         "start": 1772371892427,
         "end": 1772372452501
+      },
+      {
+        "date": "01.03.2026",
+        "start": 1772372689289,
+        "end": 1772372987053
+      },
+      {
+        "date": "01.03.2026",
+        "start": 1772376182138,
+        "end": 1772387556673
       }
     ],
     "files": [
@@ -30,7 +40,13 @@
       "s-beh.svg",
       "s-tictok.svg",
       "phone.svg",
-      "s-drb.svg"
+      "s-drb.svg",
+      "blogpage.html",
+      "blogpage.scss",
+      "blockhead.scss",
+      ".DS_Store",
+      "noise.html",
+      "noise.scss"
     ]
   }
 }
