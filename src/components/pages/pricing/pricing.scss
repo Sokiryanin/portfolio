@@ -1,0 +1,124 @@
+.pricing {
+  @include adaptiveValue('padding-top', 224, 230);
+  @include adaptiveValue('padding-bottom', 160, 30);
+  // .pricing__container
+
+  &__container {
+  }
+
+  // .pricing__blockhead
+
+  &__blockhead {
+    @include adaptiveValue('margin-bottom', 64, 30);
+  }
+
+  // .pricing__items
+
+  &__items {
+    display: grid;
+    @include adaptiveValue('gap', 32, 16);
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+  }
+
+  // .pricing__item
+
+  &__item {
+  }
+
+  // .pricing__faq
+
+  &__faq {
+  }
+}
+
+.item-pricing {
+  @include adaptiveValue('padding', 48, 20);
+  display: grid;
+  @include adaptiveValue('gap', 32, 20);
+  position: relative;
+
+  &__popular {
+    position: absolute;
+    padding: 8px;
+    top: 20px;
+    right: 20px;
+    // @include adaptiveValue('top', 20, 20);
+    // @include adaptiveValue('right', 20, 15);
+    background-color: $lightColor;
+    text-transform: uppercase;
+    color: $darkColor;
+    font-size: 12px;
+    border-radius: 2px;
+  }
+
+  // .item-pricing__title
+
+  &__header {
+    display: grid;
+    gap: 8px;
+  }
+
+  // .item-pricing__title
+
+  &__title {
+  }
+
+  // .item-pricing__value
+
+  &__value {
+    font-family: $fontSecondary;
+    @include adaptiveValue('font-size', 32, 24);
+    color: $lightColor;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  // .item-pricing__tex
+
+  &__text {
+    line-height: 1.8;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  // .item-pricing__services
+
+  &__services {
+    color: $lightColor;
+  }
+
+  // .item-pricing__service
+
+  &__service {
+    &:not(:last-child) {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid $greyColor;
+    }
+  }
+
+  // .item-pricing__button
+
+  &__button {
+  }
+}
+
+.faq-pricing {
+  // .faq-pricing__header
+
+  &__header {
+  }
+
+  // .faq-pricing__label
+
+  &__label {
+  }
+
+  // .faq-pricing__items
+
+  &__items {
+  }
+}

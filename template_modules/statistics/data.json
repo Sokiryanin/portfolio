@@ -65,7 +65,14 @@
       "home.html",
       "articlepreview.html",
       "articlepreview.scss",
-      "blog.html"
+      "blog.html",
+      "pricing.html",
+      "pricing.scss",
+      "iconfont.svg",
+      "iconfont.html",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "settings.scss"
     ]
   }
 }
