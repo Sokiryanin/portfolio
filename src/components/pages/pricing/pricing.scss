@@ -18,6 +18,7 @@
     display: grid;
     @include adaptiveValue('gap', 32, 16);
     grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+    @include adaptiveValue('margin-bottom', 160, 40);
   }
 
   // .pricing__item
@@ -33,7 +34,8 @@
 
 .item-pricing {
   @include adaptiveValue('padding', 48, 20);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   @include adaptiveValue('gap', 32, 20);
   position: relative;
 
@@ -42,8 +44,6 @@
     padding: 8px;
     top: 20px;
     right: 20px;
-    // @include adaptiveValue('top', 20, 20);
-    // @include adaptiveValue('right', 20, 15);
     background-color: $lightColor;
     text-transform: uppercase;
     color: $darkColor;
@@ -88,6 +88,7 @@
 
   &__services {
     color: $lightColor;
+    flex-grow: 1;
   }
 
   // .item-pricing__service
@@ -107,9 +108,32 @@
 }
 
 .faq-pricing {
+  display: flex;
+
+  @media (width > toEm(1000)) {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  @media (width <= toEm(1000)) {
+    flex-direction: column;
+  }
+
   // .faq-pricing__header
 
   &__header {
+    @media (width > toEm(1000)) {
+      position: sticky;
+      top: 0;
+      padding-block: 32px;
+      padding-right: 48px;
+    }
+
+    @media (width <= toEm(1000)) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   // .faq-pricing__label
@@ -117,8 +141,96 @@
   &__label {
   }
 
+  // .faq-pricing__title
+
+  &__title {
+    font-family: $fontSecondary;
+    font-weight: 300;
+    @include adaptiveValue('font-size', 64, 48);
+    line-height: 1.1;
+    color: $lightColor;
+
+    span {
+      font-family: $fontItalic;
+      @media (width > toEm(1000)) {
+        display: block;
+      }
+    }
+  }
+
   // .faq-pricing__items
 
   &__items {
+    @media (width > toEm(1000)) {
+      flex: 0 0 50%;
+    }
+  }
+
+  // .faq-pricing__item
+
+  &__item {
+    @include adaptiveValue('padding', 32, 10);
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  // .faq-pricing__caption
+
+  &__caption {
+    color: $lightColor;
+    cursor: pointer;
+    font-family: $fontSecondary;
+    @include adaptiveValue('font-size', 20, 18);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    transition: color 0.3s;
+
+    &::before {
+      flex: 0 0 30px;
+      width: 30px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid $greyColor;
+      background-color: $mutedColor;
+      backdrop-filter: blur(15px);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 10px;
+
+      transition: rotate 0.3s;
+    }
+
+    &.--spoller-active::before {
+      rotate: 45deg;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $lightColorHover;
+      }
+    }
+  }
+
+  // .faq-pricing__body
+
+  &__body {
+    padding-top: 16px;
+    p {
+      line-height: 1.8;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
   }
 }

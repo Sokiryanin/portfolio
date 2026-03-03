@@ -34,7 +34,12 @@
       {
         "date": "03.03.2026",
         "start": 1772542417766,
-        "end": 1772542417766
+        "end": 1772567191133
+      },
+      {
+        "date": "03.03.2026",
+        "start": 1772567195820,
+        "end": 1772567195820
       }
     ],
     "files": [
@@ -67,12 +72,7 @@
       "articlepreview.scss",
       "blog.html",
       "pricing.html",
-      "pricing.scss",
-      "iconfont.svg",
-      "iconfont.html",
-      "iconfont.ttf",
-      "iconfont.woff2",
-      "settings.scss"
+      "pricing.scss"
     ]
   }
 }
