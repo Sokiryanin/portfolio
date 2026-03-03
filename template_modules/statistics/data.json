@@ -20,6 +20,21 @@
         "date": "01.03.2026",
         "start": 1772376182138,
         "end": 1772387556673
+      },
+      {
+        "date": "02.03.2026",
+        "start": 1772465344608,
+        "end": 1772465967816
+      },
+      {
+        "date": "03.03.2026",
+        "start": 1772533478173,
+        "end": 1772542412529
+      },
+      {
+        "date": "03.03.2026",
+        "start": 1772542417766,
+        "end": 1772542417766
       }
     ],
     "files": [
@@ -46,7 +61,11 @@
       "blockhead.scss",
       ".DS_Store",
       "noise.html",
-      "noise.scss"
+      "noise.scss",
+      "home.html",
+      "articlepreview.html",
+      "articlepreview.scss",
+      "blog.html"
     ]
   }
 }

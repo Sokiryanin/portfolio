@@ -1,6 +1,13 @@
 .blogpage {
   @include adaptiveValue('padding-top', 224, 230);
   @include adaptiveValue('padding-bottom', 160, 30);
+
+  &__content {
+    @include adaptiveValue('margin-bottom', 128, 30);
+  }
+
+  &__related {
+  }
 }
 
 .content-blogpage {
@@ -198,7 +205,6 @@ a.information-blogpage__value {
   gap: 16px;
 
   // .body-author-blogpage__media
-
   &__media {
     aspect-ratio: 1;
     flex: 0 0 60px;
@@ -232,5 +238,24 @@ a.information-blogpage__value {
   // .body-author-blogpage__desc
 
   &__desc {
+  }
+}
+
+.related-blogpage {
+  // .related-blogpage__container
+
+  &__container {
+  }
+
+  //.related__widgetheader
+  &__widgetheader {
+  }
+
+  // .related-blogpage__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(350px, 100%), 1fr));
+    gap: 32px;
   }
 }
