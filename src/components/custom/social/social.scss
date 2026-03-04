@@ -19,6 +19,22 @@
 
   &__item {
     flex-shrink: 0;
+
+    // там де є data-fls-watcher:
+    [data-fls-watcher] & {
+      // плавний скейл кожного елемента.
+      scale: 0;
+    }
+    .--watcher-view & {
+      transition-duration: 0.8s;
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          $delay: 0.1 * $i;
+          transition-delay: #{$delay}s;
+        }
+      }
+      scale: 1;
+    }
   }
 
   // .social__link

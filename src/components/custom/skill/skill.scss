@@ -25,6 +25,21 @@
 
   flex: 1 1 350px;
 
+  //анимация: три карточки двигаются волной
+  // translate: 0 50%;
+  // transition-property: translate;
+  // transition-duration: 1s;
+
+  // .--watcher-view & {
+  //   @for $i from 1 through 3 {
+  //     &:nth-child(#{$i}) {
+  //       $delay: 0.15 * $i;
+  //       transition-delay: #{$delay}s;
+  //     }
+  //   }
+  //   translate: 0 0;
+  // }
+
   //   > * {
   //     margin-bottom: 8px;
   //   }
@@ -60,7 +75,9 @@
       position: absolute;
       left: 50%;
       bottom: 0;
-      transition: width 0.5s, left 0.5s;
+      transition:
+        width 0.5s,
+        left 0.5s;
     }
     @media (any-hover: hover) {
       &:hover {

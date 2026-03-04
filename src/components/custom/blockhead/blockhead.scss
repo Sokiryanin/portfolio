@@ -3,6 +3,19 @@
   display: grid;
   justify-items: center;
   @include adaptiveValue('gap', 16, 8);
+  text-wrap: balance;
+
+  &[data-fls-watcher] {
+    // animation appear
+    translate: 0 20%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+  &.--watcher-view {
+    translate: 0 0;
+    opacity: 1;
+  }
 
   &--gap-8 {
     gap: 8px;

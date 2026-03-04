@@ -44,7 +44,17 @@
       {
         "date": "04.03.2026",
         "start": 1772618180998,
-        "end": 1772618180998
+        "end": 1772627401749
+      },
+      {
+        "date": "04.03.2026",
+        "start": 1772629711712,
+        "end": 1772640989772
+      },
+      {
+        "date": "04.03.2026",
+        "start": 1772640994977,
+        "end": 1772640994977
       }
     ],
     "files": [
@@ -85,7 +95,15 @@
       "style.scss",
       "header.html",
       "scroll.scss",
-      "header.scss"
+      "header.scss",
+      "skill.scss",
+      "work.html",
+      "work.scss",
+      "iconfont.svg",
+      "iconfont.html",
+      "iconfont.ttf",
+      "iconfont.woff2",
+      "social.scss"
     ]
   }
 }

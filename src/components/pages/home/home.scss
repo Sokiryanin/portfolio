@@ -88,32 +88,88 @@
     gap: 30px;
     align-items: center;
     justify-content: space-evenly;
+
+    opacity: 0;
+    translate: 0 100%;
+    &.--watcher-view {
+      transition: all 0.8s;
+      opacity: 1;
+      translate: 0 0;
+    }
   }
   // .clients__item
 
   &__item {
-    scale: 0;
+    // плавний скейл кожного елемента.
+    // scale: 0;
+    // .--watcher-view & {
+    //   transition-duration: 0.5s;
+    //   @for $i from 1 through 6 {
+    //     &:nth-child(#{$i}) {
+    //       $delay: 0.1 * $i;
+    //       transition-delay: #{$delay}s;
+    //     }
+    //   }
+    //   scale: 1;
+    // }
 
-    .--watcher-view & {
-      transition-duration: 0.5s;
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-          $delay: 0.1 * $i;
-          transition-delay: #{$delay}s;
-        }
-      }
-      scale: 1;
-    }
+    //  швидший варіант появи елементів
+    // opacity: 0;
+    // translate: 0 100%;
+    // .--watcher-view & {
+    //   transition: all 0.8s;
+    //   opacity: 1;
+    //   translate: 0 0;
+    // }
   }
 }
 
 /* ========== Works section ========== */
+.skills {
+  &__container {
+    //анимация для контейнера плавно поднимаются все элементы контейнера
+
+    translate: 0 30%;
+    transition-property: translate;
+    transition-duration: 1s;
+    &.--watcher-view {
+      translate: 0 0;
+    }
+  }
+}
 
 .selected-work {
   @include adaptiveValue('padding-bottom', 160, 60);
+
+  translate: 0 100px;
+  transition: all 0.8s;
+  &.--watcher-view {
+    translate: 0 0;
+  }
+
   // .selected-work__container
 
   &__container {
+  }
+
+  // .selected-work__items
+
+  /*
+  прикольный эффект ховера наоборот, при наведении курсора на элемент,
+  данный элемент подсвечивается а остальные темнеют.
+  Обрати внимание на связь с элементом   .item-work 
+  */
+  &__items {
+    &:has(.item-work:hover) .item-work:not(:hover) {
+      &::after {
+        content: '';
+        opacity: 0.6;
+      }
+    }
+  }
+
+  // .selected-work__item
+  &__item {
   }
 
   // .selected-work__header
@@ -234,9 +290,12 @@
 
   &::after {
     content: '';
+
+    transition: scale 0.8s;
+
     position: absolute;
     top: 50%;
-    left: 1px;
+    left: 0;
 
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -257,6 +316,11 @@
   // .item-process__body
 
   &__body {
+    translate: 0 20%;
+    transition: all 0.8s;
+    .--watcher-view & {
+      translate: 0 0;
+    }
   }
 
   &:last-child {
@@ -341,6 +405,13 @@
 
   &__item {
     margin-bottom: 32px;
+
+    translate: 0 20%;
+    transition: translate 0.8s;
+
+    &.--watcher-view {
+      translate: 0 0;
+    }
   }
 }
 
@@ -537,6 +608,14 @@
       display: block;
       font-family: $fontItalic;
     }
+
+    translate: 0 20%;
+    opacity: 0;
+    transition: all 0.8s;
+    &.--watcher-view {
+      opacity: 1;
+      translate: 0 0;
+    }
   }
 
   // .about-module__content
@@ -550,6 +629,14 @@
   &__text {
     font-size: 18px;
     line-height: 1.6;
+
+    translate: 0 20%;
+    opacity: 0;
+    transition: all 0.8s 0.5s;
+    &.--watcher-view {
+      opacity: 1;
+      translate: 0 0;
+    }
 
     &:not(:last-child) {
       margin-bottom: 32px;
