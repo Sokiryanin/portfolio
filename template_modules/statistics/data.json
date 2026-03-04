@@ -39,7 +39,12 @@
       {
         "date": "03.03.2026",
         "start": 1772567195820,
-        "end": 1772567195820
+        "end": 1772571142050
+      },
+      {
+        "date": "04.03.2026",
+        "start": 1772618180998,
+        "end": 1772618180998
       }
     ],
     "files": [
@@ -72,7 +77,11 @@
       "articlepreview.scss",
       "blog.html",
       "pricing.html",
-      "pricing.scss"
+      "pricing.scss",
+      "app.js",
+      "home.scss",
+      "watcher.scss",
+      "watcher.js"
     ]
   }
 }
