@@ -81,7 +81,11 @@
       "app.js",
       "home.scss",
       "watcher.scss",
-      "watcher.js"
+      "watcher.js",
+      "style.scss",
+      "header.html",
+      "scroll.scss",
+      "header.scss"
     ]
   }
 }

@@ -51,7 +51,7 @@
     // animation
 
     [data-fls-loaded] & {
-      animation: show-items 1s ease forwards;
+      animation: show-items 1.5s ease forwards;
     }
   }
 
@@ -62,13 +62,13 @@
     position: relative;
 
     [data-fls-loaded] & {
-      animation: show-items 1s ease forwards 0.3s;
+      animation: show-items 1.5s ease forwards 0.3s;
     }
   }
 
   @keyframes show-items {
     0% {
-      top: 20%;
+      top: 10%;
       opacity: 0;
     }
     100% {
