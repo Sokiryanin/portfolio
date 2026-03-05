@@ -54,7 +54,12 @@
       {
         "date": "04.03.2026",
         "start": 1772640994977,
-        "end": 1772640994977
+        "end": 1772644871606
+      },
+      {
+        "date": "05.03.2026",
+        "start": 1772703501770,
+        "end": 1772708240109
       }
     ],
     "files": [
@@ -103,7 +108,10 @@
       "iconfont.html",
       "iconfont.ttf",
       "iconfont.woff2",
-      "social.scss"
+      "social.scss",
+      "menu.html",
+      "footer.html",
+      "about.html"
     ]
   }
 }

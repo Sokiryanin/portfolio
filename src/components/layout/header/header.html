@@ -1,7 +1,7 @@
 <header
   data-fls-header
   data-fls-header-scroll
-  data-fls-header-scroll-show
+  data-fls-header-scroll-show="1000"
   class="header"
 >
   <div class="header__container">
@@ -20,7 +20,10 @@
         src="@components/layout/menu/menu.html"
         locals='{"active":"[[active]]"}'
       ></include>
-      <a href="#" data-fls-button class="header__button button button--light"
+      <a
+        href="/contacts.html"
+        data-fls-button
+        class="header__button button button--light"
         >Let's talk</a
       >
       <button type="button" data-fls-menu class="icon-menu">
