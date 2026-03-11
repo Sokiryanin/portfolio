@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconfont';
   font-display: swap;
- src: url('../fonts/iconfont.css') format('woff2');
+  src: url('../../assets/svgicons/preview/iconfont.woff2') format('woff2');
 }
 
 [class*='--icon-']::before {
